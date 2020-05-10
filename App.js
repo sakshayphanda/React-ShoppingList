@@ -36,7 +36,6 @@ const App = () => {
   const deleteItem = (id, ev) => {
     setItems((prevItems) => {
       console.log(id);
-      //Alert.alert('success', 'delete', {text: 'OK'});
 
       const newItems = prevItems
         .filter((item) => item.id !== id)
@@ -52,6 +51,10 @@ const App = () => {
   };
 
   const addItem = (itemName) => {
+    if (!itemName) {
+      Alert.alert('Error', 'Item name can not be empty', {text: 'OK'});
+      return;
+    }
     setItems((prevItems) => {
       const obj = {
         id: prevItems.length + 1,
