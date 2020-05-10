@@ -1,11 +1,8 @@
 import React, {useState} from 'react';
 import {
   StatusBar,
-  SafeAreaView,
   StyleSheet,
-  ScrollView,
   View,
-  Text,
   Alert,
 } from 'react-native';
 import ShoppingList from './components/ShoppingList';
