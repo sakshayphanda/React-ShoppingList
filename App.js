@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 import ShoppingList from './components/ShoppingList';
 import Header from './components/Header';
-
+import Contants from 'expo-constants';
 const title = 'Shopping List';
 
 const App = () => {
